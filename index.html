@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkbox UI</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkbox UI</title>
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="popup">
+            <div class="checkbox-container">
+                <!-- Checkbox to select all pages -->
+                <label class="checkbox">
+                    <span>All pages</span>
+                    <input type="checkbox" id="select-all" />
+                </label>
+                <div class="divider"></div>
+                <!-- Individual checkboxes for each page -->
+                <label class="checkbox">
+                    <span>Page 1</span>
+                    <input type="checkbox" class="page-checkbox" />
+                </label>
+                <label class="checkbox">
+                    <span>Page 2</span>
+                    <input type="checkbox" class="page-checkbox" />
+                </label>
+                <label class="checkbox">
+                    <span>Page 3</span>
+                    <input type="checkbox" class="page-checkbox" />
+                </label>
+                <label class="checkbox">
+                    <span>Page 4</span>
+                    <input type="checkbox" class="page-checkbox" />
+                </label>
+            </div>
 
-    <div class="popup">
-        <div class="checkbox-container">
-            <label class="checkbox">
-                <input type="checkbox" id="select-all">
-                <span>All pages</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" class="page-checkbox">
-                <span>Page 1</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" class="page-checkbox">
-                <span>Page 2</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" class="page-checkbox">
-                <span>Page 3</span>
-            </label>
-            <label class="checkbox">
-                <input type="checkbox" class="page-checkbox">
-                <span>Page 4</span>
-            </label>
+            <div class="divider"></div>
+
+            <!-- Button to confirm selection -->
+            <button class="done-btn">Done</button>
+
+            <!-- Message area to display feedback -->
+            <div id="message"></div>
         </div>
 
-        <button class="done-btn">Done</button>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+        <!-- Link to external JavaScript file -->
+        <script src="script.js"></script>
+    </body>
 </html>
